@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+        height: 10vh;
+        border-bottom: 1px solid #ccc;
+      }
+      .logo {
+        width: 150px;
+        height: 150px;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+        font-size: 18px;
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+      .icons i {
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .icons div {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 350px;
+        background-color: #f5f5f5;
+        border-radius: 7px;
+      }
+      .icons div input {
+        flex: 1;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        background-color: transparent;
+        text-indent: 20px;
+      }
+      .active {
+        color: #c11e1c;
+        border-bottom: 2px solid #c11e1c;
+        padding-bottom: 2px;
+        /* text-decoration: underline; */
+      }
+      ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      .icons div i {
+        padding: 0 10px;
+      }
+      main {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+        padding: 0 5%;
+      }
+      .left_Side {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 30px;
+        font-size: 20px;
+        height: 100%;
+      }
+
+      .left_Side h1 {
+        font-size: 40px;
+        color: #c11e1c;
+      }
+
+      footer {
+        width: 100%;
+        padding: 3% 5%;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+      }
+      footer div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      footer div ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      footer div ul .subscribe_input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        width: 250px;
+        font-size: 30px;
+        height: 50px;
+        border: 1px solid #ccc;
+        padding: 0 10px;
+        border-radius: 5px;
+      }
+      footer div ul .subscribe_input input {
+        flex: 1;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+      footer div ul .download_app_container {
+        display: flex;
+        gap: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./image.png" alt="auto need logo" />
+
+      <ul type="none">
+        <li>Home</li>
+        <li class="active">About</li>
+        <li><a href="./contac.html">Contact</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./index.html">Sign Up</a></li>
+      </ul>
+
+      <div class="icons">
+        <div>
+          <input type="search" placeholder="Search" />
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+
+    <main>
+      <div class="left_Side">
+        <h1>Our Story</h1>
+        <span
+          >Launched in 2015, Exclusive is South Asia’s premier online shopping
+          marketplace with an active presence in Bangladesh. Supported by a wide
+          range of tailored marketing, data, and service solutions, Exclusive
+          has 10,500 sellers and 300 brands and serves 3 million customers
+          across the region.
+        </span>
+        <p>
+          Exclusive has more than 1 million products to offer, growing at a very
+          fast pace. Exclusive offers a diverse assortment in categories ranging
+          from consumer products to many more.
+        </p>
+      </div>
+      <img src="./image.png" alt="logo_about" />
+    </main>
+
+    <footer>
+      <div>
+        <h2>Exclusive</h2>
+        <ul type="none">
+          <li>Subscribe</li>
+          <li>Get 10% off your first order</li>
+          <li class="subscribe_input">
+            <input type="text" placeholder="Enter your email" />
+            <i class="fa-solid fa-paper-plane"></i>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Support</h2>
+        <ul type="none">
+          <li>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</li>
+          <li>exclusive@gmail.com</li>
+          <li>+88015-88888-9999</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Account</h2>
+        <ul type="none">
+          <li>My Account</li>
+          <li>Login / Register</li>
+          <li>Cart</li>
+          <li>Wishlist</li>
+          <li>Shop</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Quick Link</h2>
+        <ul type="none">
+          <li>Privacy Policy</li>
+          <li>Terms Of Use</li>
+          <li>FAQ</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Download</h2>
+        <ul type="none">
+          <li>Save $3 with App New User Only</li>
+          <li class="download_app_container">
+            <img src="./image copy.png" alt="" />
+            <div>
+              <img src="./image copy 2.png" alt="" />
+              <img src="./image copy 3.png" alt="" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

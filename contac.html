@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+        height: 10vh;
+        border-bottom: 1px solid #ccc;
+      }
+      .logo {
+        width: 150px;
+        height: 150px;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+        font-size: 18px;
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+      .icons i {
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .icons div {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 350px;
+        background-color: #f5f5f5;
+        border-radius: 7px;
+      }
+      .icons div input {
+        flex: 1;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        background-color: transparent;
+        text-indent: 20px;
+      }
+      .active {
+        color: #c11e1c;
+        border-bottom: 2px solid #c11e1c;
+        padding-bottom: 2px;
+        /* text-decoration: underline; */
+      }
+      ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      .icons div i {
+        padding: 0 10px;
+      }
+
+      main {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 6% 5% 3% 5%;
+        gap: 50px;
+      }
+      .left_side {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        gap: 20px;
+        border: 1px solid #cccccc7f;
+        padding: 30px;
+      }
+      .right_side {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        min-width: 55%;
+        max-width: 55%;
+        gap: 20px;
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid #cccccc7f;
+      }
+      .right_side input {
+        width: 100%;
+        min-height: 50px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-indent: 10px;
+        outline: none;
+        border: 1px solid #ccc;
+      }
+
+      .right_side textarea {
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .right_side button {
+        width: 20%;
+        min-height: 50px;
+        border-radius: 5px;
+        border: none;
+        background-color: #c11e1c;
+        font-size: 18px;
+        color: white;
+      }
+
+      .left_side_icon {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .left_side_icon i {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #c11e1c;
+        color: white;
+        border-radius: 50%;
+      }
+      .left_side_top {
+        display: flex;
+
+        flex-direction: column;
+        gap: 10px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+      }
+      .left_side_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      footer {
+        width: 100%;
+        padding: 3% 5%;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+      }
+      footer div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      footer div ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      footer div ul .subscribe_input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        width: 250px;
+        font-size: 30px;
+        height: 50px;
+        border: 1px solid #ccc;
+        padding: 0 10px;
+        border-radius: 5px;
+      }
+      footer div ul .subscribe_input input {
+        flex: 1;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+      footer div ul .download_app_container {
+        display: flex;
+        gap: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./image.png" alt="auto need logo" />
+
+      <ul type="none">
+        <li>Home</li>
+        <li><a href="./about.html">About</a></li>
+        <li class="active">Contact</li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./index.html">Sign Up</a></li>
+      </ul>
+
+      <div class="icons">
+        <div>
+          <input type="search" placeholder="Search" />
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+    <main>
+      <div class="left_side">
+        <div class="left_side_top">
+          <div class="left_side_icon">
+            <i class="fa-solid fa-phone"></i>
+            <h2>Call To Us</h2>
+          </div>
+          <p>Phone: +8801611112222</p>
+          <p>We are available 24/7, 7 days a week.</p>
+        </div>
+        <div class="left_side_bottom">
+          <div class="left_side_icon">
+            <i class="fa-solid fa-envelope"></i>
+            <h2>Write To Us</h2>
+          </div>
+          <p>Fill out our form and we will contact you within 24 hours.</p>
+          <p>Email: customer@exclusive.com</p>
+          <p>Email: support@exclusive.com</p>
+        </div>
+      </div>
+      <div class="right_side">
+        <input type="text" placeholder="Your Name" />
+        <input type="text" placeholder="Your Email" />
+        <input type="text" placeholder="Your Phone" />
+        <textarea placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h2>Exclusive</h2>
+        <ul type="none">
+          <li>Subscribe</li>
+          <li>Get 10% off your first order</li>
+          <li class="subscribe_input">
+            <input type="text" placeholder="Enter your email" />
+            <i class="fa-solid fa-paper-plane"></i>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Support</h2>
+        <ul type="none">
+          <li>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</li>
+          <li>exclusive@gmail.com</li>
+          <li>+88015-88888-9999</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Account</h2>
+        <ul type="none">
+          <li>My Account</li>
+          <li>Login / Register</li>
+          <li>Cart</li>
+          <li>Wishlist</li>
+          <li>Shop</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Quick Link</h2>
+        <ul type="none">
+          <li>Privacy Policy</li>
+          <li>Terms Of Use</li>
+          <li>FAQ</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Download</h2>
+        <ul type="none">
+          <li>Save $3 with App New User Only</li>
+          <li class="download_app_container">
+            <img src="./image copy.png" alt="" />
+            <div>
+              <img src="./image copy 2.png" alt="" />
+              <img src="./image copy 3.png" alt="" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
